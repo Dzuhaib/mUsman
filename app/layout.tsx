@@ -3,10 +3,10 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "الذهب/الدولار ماستر🔰 – Premium Gold Signals",
+  title: "الذهب/الدولار ماستر🔰 – Premium Gold Signals",
   description: "Follow الذهب/الدولار ماستر🔰 for accurate daily gold trading signals. Join our Telegram channel for real-time XAUUSD analysis.",
   openGraph: {
-  title: "الذهب/الدولار ماستر🔰 – Premium Gold Signals",
+    title: "الذهب/الدولار ماستر🔰 – Premium Gold Signals",
     description: "Accurate XAUUSD signals. Daily gold market analysis.",
     type: "website",
   },
@@ -30,7 +30,7 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1380523720669865');
+            fbq('init', '1661442715630637');
             fbq('track', 'PageView');
           `}
         </Script>
@@ -39,7 +39,7 @@ export default function RootLayout({
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1380523720669865&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1661442715630637&ev=PageView&noscript=1"
             alt=""
           />
         </noscript>

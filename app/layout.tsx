@@ -3,11 +3,13 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "الذهب/الدولار ماستر🔰 – Premium Gold Signals",
-  description: "Follow الذهب/الدولار ماستر🔰 for accurate daily gold trading signals. Join our Telegram channel for real-time XAUUSD analysis.",
+  title: "الذهب/الدولار ماستر🔰 – Gold USD Master | Premium Gold Signals",
+  description:
+    "Follow الذهب/الدولار ماستر (Gold USD Master) for accurate daily gold trading signals, professional market analysis and real-time XAUUSD updates on Telegram. انضم لقناة الذهب/الدولار ماستر للحصول على إشارات ذهبية دقيقة وتحليل سوق احترافي.",
   openGraph: {
-    title: "الذهب/الدولار ماستر🔰 – Premium Gold Signals",
-    description: "Accurate XAUUSD signals. Daily gold market analysis.",
+    title: "الذهب/الدولار ماستر🔰 – Gold USD Master | Premium Gold Signals",
+    description:
+      "Accurate XAUUSD signals. Daily gold market analysis. إشارات ذهبية دقيقة وتحليل يومي لسوق الذهب.",
     type: "website",
   },
 };

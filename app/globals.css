@@ -7,20 +7,25 @@
 }
 
 :root {
-  --tg-blue: #2AABEE;
-  --tg-blue-hover: #1e96d4;
-  --tg-bg-dark: #17212b;
-  --tg-panel: #242f3d;
-  --tg-panel-light: #3a4a5c;
-  --tg-text-primary: #e9edef;
-  --tg-text-secondary: #858e99;
-  --tg-hit-bg: #0d2b45;
+  --gold: #d4af37;
+  --gold-hover: #e6c55c;
+  --gold-soft: #f0d788;
+  --gold-glow: rgba(212, 175, 55, 0.35);
+  --tg-bg-dark: #0d1117;
+  --tg-bg-deeper: #07090d;
+  --tg-panel: #151b23;
+  --tg-panel-light: #252d3a;
+  --tg-text-primary: #f5f2e9;
+  --tg-text-secondary: #9aa3af;
+  --tg-hit-bg: #1a1407;
+  --tg-blue: var(--gold);
+  --tg-blue-hover: var(--gold-hover);
 }
 
 html, body {
   height: 100%;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--tg-bg-dark);
+  background: var(--tg-bg-deeper);
   color: var(--tg-text-primary);
   overflow: hidden;
 }
@@ -37,7 +42,10 @@ html, body {
 /* Chat background pattern */
 .chat-bg {
   background-color: var(--tg-bg-dark);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cdefs%3E%3Cpattern id='p' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='50' cy='10' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='30' cy='40' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='70' cy='40' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='10' cy='70' r='1.5' fill='%23182229' opacity='0.7'/%3E%3Ccircle cx='50' cy='70' r='1.5' fill='%23182229' opacity='0.7'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23p)'/%3E%3C/svg%3E");
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(212, 175, 55, 0.14), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 110%, rgba(212, 175, 55, 0.08), transparent),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cdefs%3E%3Cpattern id='p' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%23d4af37' opacity='0.05'/%3E%3Ccircle cx='50' cy='10' r='1.5' fill='%23d4af37' opacity='0.05'/%3E%3Ccircle cx='30' cy='40' r='1.5' fill='%23d4af37' opacity='0.05'/%3E%3Ccircle cx='70' cy='40' r='1.5' fill='%23d4af37' opacity='0.05'/%3E%3Ccircle cx='10' cy='70' r='1.5' fill='%23d4af37' opacity='0.05'/%3E%3Ccircle cx='50' cy='70' r='1.5' fill='%23d4af37' opacity='0.05'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23p)'/%3E%3C/svg%3E");
 }
 
 /* Pulse animation for live badge */

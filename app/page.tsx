@@ -8,12 +8,6 @@ const TelegramIcon = () => (
   </svg>
 );
 
-const STATS = [
-  { value: "4.2K+", label: "Followers", labelAr: "متابع" },
-  { value: "100%", label: "Transparency", labelAr: "شفافية" },
-  { value: "24/7", label: "Support", labelAr: "دعم" },
-];
-
 const FEATURES = [
   { icon: "🎯", en: "Accurate Daily Signals", ar: "إشارات يومية دقيقة" },
   { icon: "📊", en: "Professional Market Analysis", ar: "تحليل سوق احترافي" },
@@ -100,9 +94,9 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
         }}
       >
+        <div style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", margin: "auto" }}>
         <div className="animate-fade-in" style={{
           background: "linear-gradient(180deg, rgba(21,27,35,0.98), rgba(13,17,23,0.98))",
           borderRadius: 20,
@@ -130,7 +124,6 @@ export default function Home() {
                 height: 100,
                 borderRadius: "50%",
                 objectFit: "cover",
-                marginTop: 8,
                 marginBottom: 16,
                 border: "3px solid var(--gold)",
                 boxShadow: "0 4px 24px var(--gold-glow)",
@@ -149,92 +142,37 @@ export default function Home() {
                 إشارات ذهبية متميزة · تداول دقيق · تحليل يومي
               </span>
             </div>
-
-            <div style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 6,
-              background: "var(--tg-hit-bg)",
-              border: "1px solid var(--gold)",
-              borderRadius: 12,
-              padding: "4px 14px",
-              fontSize: 12,
-              color: "var(--gold-soft)",
-              marginTop: 14,
-              fontWeight: 600,
-            }}>
-              <span style={{
-                width: 7,
-                height: 7,
-                borderRadius: "50%",
-                background: "var(--gold)",
-                display: "inline-block",
-                animation: "pulse 1.5s infinite",
-                boxShadow: "0 0 8px var(--gold)",
-              }} />
-              Official Channel · القناة الرسمية
-            </div>
-
-            <div style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: 10,
-              marginTop: 22,
-            }}>
-              {STATS.map((s) => (
-                <div key={s.label} style={{
-                  background: "rgba(212,175,55,0.06)",
-                  border: "1px solid var(--tg-panel-light)",
-                  borderRadius: 12,
-                  padding: "10px 4px",
-                }}>
-                  <div style={{ fontSize: 17, fontWeight: 800, color: "var(--gold-soft)" }}>{s.value}</div>
-                  <div style={{ fontSize: 11, color: "var(--tg-text-secondary)", marginTop: 2 }}>
-                    {s.label} · <span dir="rtl">{s.labelAr}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div style={{ borderTop: "1px solid var(--tg-panel-light)", margin: "22px -24px 0", padding: "18px 24px 4px" }}>
-              <p style={{ fontSize: 12, color: "var(--tg-text-secondary)", textAlign: "center", marginBottom: 12, lineHeight: 1.7 }}>
-                Get Daily XAUUSD Signals &amp; Gold Market Analysis — Join Us on Telegram
-                <br />
-                <span dir="rtl" style={{ display: "inline-block", marginTop: 2 }}>
-                  احصل على إشارات ذهب (XAUUSD) اليومية والتحليلات — انضم إلينا على تيليجرام
-                </span>
-              </p>
-              <a
-                href={CHANNEL_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 9,
-                  background: "linear-gradient(135deg, #d4af37, #a8852b)",
-                  color: "#0d1117",
-                  textDecoration: "none",
-                  borderRadius: 26,
-                  padding: "12px 28px",
-                  fontSize: 14,
-                  fontWeight: 700,
-                  boxShadow: "0 4px 18px var(--gold-glow)",
-                  transition: "transform 0.15s, box-shadow 0.2s",
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow = "0 8px 26px var(--gold-glow)";
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "0 4px 18px var(--gold-glow)";
-                }}
-              >
-                <TelegramIcon />
-                Follow الذهب/الدولار ماستر🔰
-              </a>
-            </div>
+            <a
+              href={CHANNEL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 9,
+                background: "linear-gradient(135deg, #d4af37, #a8852b)",
+                color: "#0d1117",
+                textDecoration: "none",
+                borderRadius: 26,
+                padding: "12px 28px",
+                fontSize: 14,
+                fontWeight: 700,
+                marginTop: 18,
+                boxShadow: "0 4px 18px var(--gold-glow)",
+                transition: "transform 0.15s, box-shadow 0.2s",
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = "0 8px 26px var(--gold-glow)";
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "0 4px 18px var(--gold-glow)";
+              }}
+            >
+              <TelegramIcon />
+              Join Channel · انضم الآن
+            </a>
           </div>
         </div>
 
@@ -338,6 +276,7 @@ export default function Home() {
             </span>
           </a>
         </div>
+      </div>
       </div>
 
       <style>{`
